@@ -13,6 +13,7 @@ def read(input_code):
     code = input_code.replace("\n","").replace(" ","").replace("\t","")
     if not code.endswith("。") :
         print("每一句結尾都要加'。'")
+        return
     if not is_all_chinese(code):
         print("程式碼全都要是中文")
         return
