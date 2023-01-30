@@ -66,7 +66,7 @@ def read(input_code):
                     read(result_code)
             # 不等於
             elif if_else_type == identifiers[3] and len(if_else_code[0].split(identifiers[3])) == 2:
-                two_Comparators = if_else_code[0].split(identifiers[2])
+                two_Comparators = if_else_code[0].split(identifiers[3])
                 if two_Comparators[0] in var:
                     Comparators1 = var[two_Comparators[0]]
                 else:
